@@ -1,5 +1,8 @@
 const fs = require("fs");
-// const { skillSettings } = require("./utils/skillSettings");
+const { skillSettings } = require("./utils/skillSettings");
+const { defaultActions } = require("./utils/defaultActions");
+const { defaultIntents } = require("./utils/defaultIntents");
+const { otherDataWorkspace } = require("./utils/otherDataWorkspace");
 
 const filePath = "./input/trivia_input.json";
 
@@ -8,8 +11,20 @@ async function readFile() {
   return data;
 }
 
+const defaultJSONvar = {
+  ...skillSettings,
+  workspace: {
+    actions: defaultActions,
+    intents: defaultIntents,
+    ...otherDataWorkspace,
+  },
+};
+
+console.log("defaultJSONvar", defaultJSONvar);
+
 function createFiles(res) {
-  const jsonFromArrayOfObjects = JSON.stringify(res);
+  const jsonFromArrayOfObjects = JSON.stringify(defaultJSONvar);
+  console.log("jsonFromArrayOfObjects OK");
   fs.writeFileSync("./output/ibm-ready.json", jsonFromArrayOfObjects);
 }
 
