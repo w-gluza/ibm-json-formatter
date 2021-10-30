@@ -1,42 +1,25 @@
 const fs = require("fs");
-const { skillSettings } = require("./utils/skillSettings");
+// const { skillSettings } = require("./utils/skillSettings");
 
+const filePath = "./input/trivia_input.json";
 
-function readFile() {
-  fs.readFile("./input/database.json", "utf8", (err, data) => {
-    if (err) {
-      console.log(`Error reading file from disk: ${err}`);
-    } else {
-      // parse JSON string to JSON object
-      const databases = JSON.parse(data);
-
-      // print all databases
-      databases.forEach((db) => {
-        console.log(`${db.name}: ${db.type}`);
-      });
-    }
-  });
+async function readFile() {
+  const data = JSON.parse(fs.readFileSync(filePath));
+  return data;
 }
 
-console.log("skillSettings", skillSettings);
-// convert JSON object to a string
-const data = JSON.stringify(ibmFriendlyJSON);
-
-function createFiles() {
-  // write file to disk
-  fs.writeFile("./output/ibm-ready.json", data, "utf8", (err) => {
-    if (err) {
-      console.log(`Error writing file: ${err}`);
-    } else {
-      console.log(`File is written successfully!`);
-    }
-  });
+function createFiles(res) {
+  const jsonFromArrayOfObjects = JSON.stringify(res);
+  fs.writeFileSync("./output/ibm-ready.json", jsonFromArrayOfObjects);
 }
+
+const functionsWrapper = () => {
+  readFile().then((responses) => createFiles(responses));
+};
 
 // Main function, where all the functions are being called
 async function main() {
-  await readFile();
-  await createFiles();
+  await functionsWrapper();
 }
 
 main();
