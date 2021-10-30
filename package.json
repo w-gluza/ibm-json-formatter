@@ -1,0 +1,30 @@
+{
+  "name": "watson-assistant-json-formatter",
+  "version": "1.0.0",
+  "description": "Custom JSON formatter for Watson assistant actions",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ext js ./script.js localhost 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit"
+    }
+  ],
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1"
+  }
+}
