@@ -3,6 +3,9 @@ const { skillSettings } = require("./utils/skillSettings");
 const { defaultActions } = require("./utils/defaultActions");
 const { defaultIntents } = require("./utils/defaultIntents");
 const { otherDataWorkspace } = require("./utils/otherDataWorkspace");
+const { singleAction, singleIntent } = require("./demo/demo");
+const { triviaInputJS } = require("./input/triviaInputJS");
+const { actionObject } = require("./utils/defaultActions");
 
 const filePath = "./input/trivia_input.json";
 
@@ -11,20 +14,24 @@ async function readFile() {
   return data;
 }
 
-const defaultJSONvar = {
-  ...skillSettings,
-  workspace: {
-    actions: defaultActions,
-    intents: defaultIntents,
-    ...otherDataWorkspace,
-  },
-};
+// const defaultJSONvar = {
+//   ...skillSettings,
+//   workspace: {
+//     actions: defaultActions,
+//     intents: defaultIntents,
+//     ...otherDataWorkspace,
+//   },
+// };
 
 // console.log("defaultActions", defaultActions);
-const singleAction = {
+
+// console.log("triviaInputJS", triviaInputJS);
+
+// const getActionsFromJSON = () => {
+const customActions = triviaInputJS.map((obj) => ({
   steps: [
     {
-      step: "step_800",
+      step: obj.step,
       output: {
         generic: [
           {
@@ -33,7 +40,7 @@ const singleAction = {
                 text_expression: {
                   concat: [
                     {
-                      scalar: "Random answer",
+                      scalar: obj.answer,
                     },
                   ],
                 },
@@ -48,43 +55,50 @@ const singleAction = {
       resolver: {
         type: "end_action",
       },
-      variable: "step_800",
+      variable: obj.step,
     },
   ],
-  title: "Random question goes here?",
-  action: "action_28303",
+  title: obj.question,
+  action: obj.action,
   handlers: [],
   condition: {
-    intent: "action_28303_intent_9619",
+    intent: obj.intent,
   },
   variables: [
     {
-      title: "Random answer",
-      variable: "step_800",
+      title: obj.answer,
+      variable: obj.step,
       data_type: "any",
     },
   ],
-  next_action: "fallback",
+  next_action: "action_101",
   topic_switch: {
     allowed_from: true,
     allowed_into: true,
   },
   disambiguation_opt_out: false,
-};
+}));
 
-const singleIntent = {
-  intent: "action_28303_intent_9619",
+//   // console.log("customActions", customActions);
+//   return customActions;
+// };
+
+// const getIntentsFromJSON = () => {
+const customIntents = triviaInputJS.map((obj) => ({
+  intent: obj.intent,
   examples: [
     {
-      text: "Random question goes here?",
+      text: obj.question,
     },
   ],
-};
+}));
 
-const allActions = [singleAction, ...defaultActions];
-const allIntents = [singleIntent, ...defaultIntents];
+//   console.log("customIntents", customIntents);
+//   return customIntents;
+// };
 
-console.log("allIntents", allIntents);
+const allActions = [...customActions, singleAction, ...defaultActions];
+const allIntents = [...customIntents, singleIntent, ...defaultIntents];
 
 const JSONmerge = {
   ...skillSettings,
@@ -97,12 +111,14 @@ const JSONmerge = {
 
 function createFiles(res) {
   const jsonFromArrayOfObjects = JSON.stringify(JSONmerge);
-  console.log("jsonFromArrayOfObjects OK");
+  // console.log("jsonFromArrayOfObjects OK");
   fs.writeFileSync("./output/ibm-ready.json", jsonFromArrayOfObjects);
 }
 
 const functionsWrapper = () => {
   readFile().then((responses) => createFiles(responses));
+  // getActionsFromJSON();
+  // getIntentsFromJSON();
 };
 
 // Main function, where all the functions are being called
