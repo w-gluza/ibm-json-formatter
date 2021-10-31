@@ -295,7 +295,7 @@ const defaultActions = [
         data_type: "any",
       },
     ],
-    next_action: "fallback",
+    next_action: "action_28303", // it needs to lead to real action
     disambiguation_opt_out: true,
   },
 ];
