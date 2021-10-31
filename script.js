@@ -4,8 +4,8 @@ const { defaultActions } = require("./utils/defaultActions");
 const { defaultIntents } = require("./utils/defaultIntents");
 const { otherDataWorkspace } = require("./utils/otherDataWorkspace");
 const { singleAction, singleIntent } = require("./demo/demo");
-const { triviaInputJS } = require("./input/triviaInputJS");
-const { actionObject } = require("./utils/defaultActions");
+// const { triviaInputJS } = require("./input/triviaInputJS");
+const { dataBase } = require("./input/database");
 
 const filePath = "./input/trivia_input.json";
 
@@ -14,24 +14,13 @@ async function readFile() {
   return data;
 }
 
-// const defaultJSONvar = {
-//   ...skillSettings,
-//   workspace: {
-//     actions: defaultActions,
-//     intents: defaultIntents,
-//     ...otherDataWorkspace,
-//   },
-// };
+const maxTitleCharacters = 64; // title cannot be longer than 64 characters
+const maxScalarCharacters = 400; // scalar cannot be longer than 400 characters
 
-// console.log("defaultActions", defaultActions);
-
-// console.log("triviaInputJS", triviaInputJS);
-
-// const getActionsFromJSON = () => {
-const customActions = triviaInputJS.map((obj) => ({
+const customActions = dataBase.map((obj) => ({
   steps: [
     {
-      step: obj.step,
+      step: `step_${obj.stepId}`,
       output: {
         generic: [
           {
@@ -40,7 +29,7 @@ const customActions = triviaInputJS.map((obj) => ({
                 text_expression: {
                   concat: [
                     {
-                      scalar: obj.answer,
+                      scalar: obj.answer.substring(0, maxScalarCharacters),
                     },
                   ],
                 },
@@ -55,23 +44,23 @@ const customActions = triviaInputJS.map((obj) => ({
       resolver: {
         type: "end_action",
       },
-      variable: obj.step,
+      variable: `step_${obj.stepId}`,
     },
   ],
-  title: obj.question,
-  action: obj.action,
+  title: obj.question.substring(0, maxTitleCharacters),
+  action: `action_${obj.actionId}`,
   handlers: [],
   condition: {
-    intent: obj.intent,
+    intent: `action_${obj.actionId}_intent_${obj.intentId}`,
   },
   variables: [
     {
-      title: obj.answer,
-      variable: obj.step,
+      title: obj.answer.substring(0, maxTitleCharacters),
+      variable: `step_${obj.stepId}`,
       data_type: "any",
     },
   ],
-  next_action: "action_101",
+  next_action: `action_${obj.nextActionId}`,
   topic_switch: {
     allowed_from: true,
     allowed_into: true,
@@ -84,8 +73,8 @@ const customActions = triviaInputJS.map((obj) => ({
 // };
 
 // const getIntentsFromJSON = () => {
-const customIntents = triviaInputJS.map((obj) => ({
-  intent: obj.intent,
+const customIntents = dataBase.map((obj) => ({
+  intent: `action_${obj.actionId}_intent_${obj.intentId}`,
   examples: [
     {
       text: obj.question,
@@ -97,8 +86,8 @@ const customIntents = triviaInputJS.map((obj) => ({
 //   return customIntents;
 // };
 
-const allActions = [...customActions, singleAction, ...defaultActions];
-const allIntents = [...customIntents, singleIntent, ...defaultIntents];
+const allActions = [singleAction, ...customActions, ...defaultActions];
+const allIntents = [singleIntent, ...customIntents, ...defaultIntents];
 
 const JSONmerge = {
   ...skillSettings,
