@@ -119,6 +119,7 @@ dist
 
 
 /input/skill-EmptySkill.json
+/input/skill-FAQ.json
 
 /output/ibm-ready.json
 /output/trivia_output.json

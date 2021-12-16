@@ -295,7 +295,7 @@ const defaultActions = [
         data_type: "any",
       },
     ],
-    next_action: "action_197", // it needs to be the last actionId from the database
+    next_action: "action_195", // it needs to be the last actionId from the database
     disambiguation_opt_out: true,
   },
 ];

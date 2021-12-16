@@ -1,0 +1,848 @@
+[
+  {
+    "question": "Can categories be renamed, moved, or redirected?",
+    "answer": "Yes, \"speedy renaming\" can be done by listing the category at Wikipedia:Categories for discussion. Speedy renaming. See Wikipedia:Category deletion policy#Speedy renaming procedure.",
+    "category": "categorization",
+    "actionId": 102,
+    "nextActionId": 101,
+    "stepId": 100002,
+    "intentId": 1000002
+  },
+  {
+    "question": "Can I add something to Wikipedia that I got from somewhere else?",
+    "answer": "The absence of a copyright notice does not mean that a work may be freely used. (At the same time, copyright notices have sometimes been incorrectly applied to uncopyrighted material.) If in doubt, assume you cannot use it.",
+    "category": "copyright",
+    "actionId": 103,
+    "nextActionId": 102,
+    "stepId": 100003,
+    "intentId": 1000003
+  },
+  {
+    "question": "Can I start an article about myself or my company?",
+    "answer": "We strongly discourage this. Wikipedia is intended to be an objective resource, and it’s very, very difficult for people to be fully objective about themselves or their company.",
+    "category": "article-subject",
+    "actionId": 104,
+    "nextActionId": 103,
+    "stepId": 100004,
+    "intentId": 1000004
+  },
+  {
+    "question": "Can pages be in more than one category?",
+    "answer": "Yes, it is expected that most pages will be members of more than one category. Similarly, each category can be a member of more than one parent category.",
+    "category": "categorization",
+    "actionId": 105,
+    "nextActionId": 104,
+    "stepId": 100005,
+    "intentId": 1000005
+  },
+  {
+    "question": "Can templates be renamed, moved, redirected?",
+    "answer": "Yes, but do your homework and pay attention to \"What links here\" (WLH). You may need to purge the cache for a page or touch pages that reference a template before WLH reports zero.",
+    "category": "templates",
+    "actionId": 106,
+    "nextActionId": 105,
+    "stepId": 100006,
+    "intentId": 1000006
+  },
+  {
+    "question": "Does Wikipedia use cookies?",
+    "answer": "Cookies are not required to read or edit Wikipedia, but they are required in order to log in and link your edits to a user account. When you log in, the wiki will set a temporary session cookie which identifies your login session; this will be expired when your browser exits (or after an inactivity timeout), and is not saved on your hard drive.",
+    "category": "technical",
+    "actionId": 107,
+    "nextActionId": 106,
+    "stepId": 100007,
+    "intentId": 1000007
+  },
+  {
+    "question": "How big is Wikipedia?",
+    "answer": "Wikipedia currently has 6,403,183 articles in total in the English version alone.",
+    "category": "overview",
+    "actionId": 108,
+    "nextActionId": 107,
+    "stepId": 100008,
+    "intentId": 1000008
+  },
+  {
+    "question": "How can I add pictures to pages?",
+    "answer": "If you have a registered account that is four days old with at least ten edits, you can use Wikipedia:File Upload Wizard to upload the image to Wikipedia, including it in wiki pages by including its file name, the thumbnail option, and a caption:",
+    "category": "editing",
+    "actionId": 109,
+    "nextActionId": 108,
+    "stepId": 100009,
+    "intentId": 1000009
+  },
+  {
+    "question": "How can I become an administrator?",
+    "answer": "In short, you spend years developing a good edit history that shows you understand Wikipedia policies, have good judgement, a good temperament, and have a need for the administrator toolset. A nomination is then made at WP:RFA where the community decides if the user merits the tools. Administrators have no special status and are like any other editor, they simply have tools that would be irresponsible for the entire community to have. You can do probably 95% of tasks on Wikipedia without being an administrator.",
+    "category": "administrators",
+    "actionId": 110,
+    "nextActionId": 109,
+    "stepId": 100010,
+    "intentId": 1000010
+  },
+  {
+    "question": "How can I contact Wikipedia?",
+    "answer": "Given the massively collaborative nature of the project, there is no single point of contact. If you send an e-mail to an individual board or staff member, they will likely just forward it to the group of Wikipedia volunteers who answer reader inquiries. You can reach those volunteers yourself, by e-mailing info-en@wikimedia.org. See Wikipedia:Contact us for information.",
+    "category": "main",
+    "actionId": 111,
+    "nextActionId": 110,
+    "stepId": 100011,
+    "intentId": 1000011
+  },
+  {
+    "question": "How can I contribute?",
+    "answer": "For how to volunteer, see Wikipedia:Contributing to Wikipedia.",
+    "category": "contributing",
+    "actionId": 112,
+    "nextActionId": 111,
+    "stepId": 100012,
+    "intentId": 1000012
+  },
+  {
+    "question": "How can I delete uploaded items?",
+    "answer": "Only Wikipedia:Administrators can delete uploads, but anyone can upload a new item with the same name, thereby replacing the old one. If you want to nominate an uploaded image for deletion, see Wikipedia:Files for discussion.",
+    "category": "editing",
+    "actionId": 113,
+    "nextActionId": 112,
+    "stepId": 100013,
+    "intentId": 1000013
+  },
+  {
+    "question": "How can I get rid of the article about myself or my company?",
+    "answer": "We generally aim to improve articles rather than delete them. Saying an article is “bad” (or inaccurate, or biased, or badly written) isn’t reason enough for it to be deleted: we would prefer you try to help us make it better. If you truly feel a subject isn’t notable enough to warrant an article, it may be worth saying that on the talk page.",
+    "category": "article-subject",
+    "actionId": 114,
+    "nextActionId": 113,
+    "stepId": 100014,
+    "intentId": 1000014
+  },
+  {
+    "question": "How can I insert a new section in an article?",
+    "answer": "See Help:Section. There is no automated way to create a new section within an article, it is done manually by placing ='s around a heading, for example:",
+    "category": "editing",
+    "actionId": 115,
+    "nextActionId": 114,
+    "stepId": 100015,
+    "intentId": 1000015
+  },
+  {
+    "question": "How can I tell if an article exists in another language Wikipedia?",
+    "answer": "We try to build links between different language pages – that's one way of seeing if an article exists elsewhere. If you don't see the language links at the left of a page, go looking for the corresponding article(s) on foreign Wikipedias.",
+    "category": "contributing",
+    "actionId": 116,
+    "nextActionId": 115,
+    "stepId": 100016,
+    "intentId": 1000016
+  },
+  {
+    "question": "How do I add an article to a category?",
+    "answer": "Edit the article and add [[Category:Surname]] at the bottom of the article. For example: [[Category:Mind-body interventions]].",
+    "category": "categorization",
+    "actionId": 117,
+    "nextActionId": 116,
+    "stepId": 100017,
+    "intentId": 1000017
+  },
+  {
+    "question": "How do I change my password?",
+    "answer": "You can change your password via Special:ChangePassword; you can also find a link to this in your preferences.",
+    "category": "technical",
+    "actionId": 118,
+    "nextActionId": 117,
+    "stepId": 100018,
+    "intentId": 1000018
+  },
+  {
+    "question": "How do I change my username or delete my account?",
+    "answer": "For changing your username see Wikipedia:Changing username. An account cannot be deleted. If an account was deleted, all the edits made by the user could not be properly attributed. You can, however, change your username, and request that your userpage be deleted by adding the code {{db-user}} to the top of the page. See also Wikipedia:Courtesy vanishing.",
+    "category": "main",
+    "actionId": 119,
+    "nextActionId": 118,
+    "stepId": 100019,
+    "intentId": 1000019
+  },
+  {
+    "question": "How do I change the name of an article?",
+    "answer": "You move the article using the \"move\" button (you can see it by clicking the downward-pointing arrow to the right of the \"edit\" button). But in order to do this, you must have an account that has reached autoconfirmed status, meaning it must be at least four days old and have made at least ten edits. If you are not an autoconfirmed user, or the move is controversial, or the page you wish to rename is move protected, visit Wikipedia:Requested moves. You may also request to have an admin grant you confirmed status if you are a legitimate alternative account of an autoconfirmed user.",
+    "category": "main",
+    "actionId": 120,
+    "nextActionId": 119,
+    "stepId": 100020,
+    "intentId": 1000020
+  },
+  {
+    "question": "How do I check spelling on a page?",
+    "answer": "When editing a larger article, it may be more convenient to paste the text into your favorite text editor or word processor first, to edit and check the spelling there, and then paste your corrected text back into Wikipedia editor to complete your contribution. You can also use an online spelling checker such as Spellonline.",
+    "category": "contributing",
+    "actionId": 121,
+    "nextActionId": 120,
+    "stepId": 100021,
+    "intentId": 1000021
+  },
+  {
+    "question": "How do I cite sources?",
+    "answer": "Footnotes are created using the Cite software extension. This extension adds the HTML-like elements <ref>...</ref>, <references /> and <references>...</references>. The elements are also used in a number of templates; for example, it is becoming more common to use {{reflist}} rather than <references /> as it can style the reference list.",
+    "category": "editing",
+    "actionId": 122,
+    "nextActionId": 121,
+    "stepId": 100022,
+    "intentId": 1000022
+  },
+  {
+    "question": "How do I cite Wikipedia?",
+    "answer": "Cite it as you would any other web page in accordance with the normal citation practice the publication you are submitting the paper to follows. See Wikipedia:Citing Wikipedia for more details.",
+    "category": "main",
+    "actionId": 123,
+    "nextActionId": 122,
+    "stepId": 100023,
+    "intentId": 1000023
+  },
+  {
+    "question": "How do I create a new page?",
+    "answer": "You are required to have a Wikipedia account to create a new article—you can register here. To see other benefits to creating an account, see Why create an account? For creating a new article see Wikipedia:Your first article and Wikipedia:Article development; and you may wish to try the Article Wizard. For creating a new page in your userspace see How do I create a user subpage?; or use the Article Wizard, which has an option for that. Make sure that there is enough context and it is notable.",
+    "category": "main",
+    "actionId": 124,
+    "nextActionId": 123,
+    "stepId": 100024,
+    "intentId": 1000024
+  },
+  {
+    "question": "How do I delete a category?",
+    "answer": "If you feel a category falls within Wikipedia:Category deletion policy, bring it up on Wikipedia:Categories for discussion.",
+    "category": "categorization",
+    "actionId": 125,
+    "nextActionId": 124,
+    "stepId": 100025,
+    "intentId": 1000025
+  },
+  {
+    "question": "How do I delete a page?",
+    "answer": "First off, please don't blank articles (remove all the text from them). Such changes will most likely get reverted soon afterwards, so they are pointless, too. The procedure for deletions is explained at Wikipedia:Deletion policy. Articles that should be deleted are most commonly nominated at Wikipedia:Articles for deletion.",
+    "category": "editing",
+    "actionId": 126,
+    "nextActionId": 125,
+    "stepId": 100026,
+    "intentId": 1000026
+  },
+  {
+    "question": "How do I delete a template?",
+    "answer": "{{tfd}}, but again, do your WLH homework. Note that deleting templates will probably break some history functionality. You should fix all the \"What links here\" down to zero before deleting a template.",
+    "category": "templates",
+    "actionId": 127,
+    "nextActionId": 126,
+    "stepId": 100027,
+    "intentId": 1000027
+  },
+  {
+    "question": "How do I describe images?",
+    "answer": "Click on the image to get the description page. Also, when you upload the file everything you put in the upload summary is placed into the image description page. See Image:Boat.jpg for an example of what goes onto one of these pages.",
+    "category": "editing",
+    "actionId": 128,
+    "nextActionId": 127,
+    "stepId": 100028,
+    "intentId": 1000028
+  },
+  {
+    "question": "How do I donate to Wikipedia?",
+    "answer": "See http://wikimediafoundation.org/fundraising.",
+    "category": "contributing",
+    "actionId": 129,
+    "nextActionId": 128,
+    "stepId": 100029,
+    "intentId": 1000029
+  },
+  {
+    "question": "How do I edit a page?",
+    "answer": "To edit the whole page at once, click the \"edit this page\" tab at the top. To edit just one section, click the \"edit\" link to the right of the section heading. To edit on Wikipedia, you type in a special markup language called wikitext.",
+    "category": "editing",
+    "actionId": 130,
+    "nextActionId": 129,
+    "stepId": 100030,
+    "intentId": 1000030
+  },
+  {
+    "question": "How do I edit a redirect page?",
+    "answer": "The easiest way to edit the redirected page is to click on the link you see at the top of the page after being redirected: \"redirected from ...\".",
+    "category": "editing",
+    "actionId": 131,
+    "nextActionId": 130,
+    "stepId": 100031,
+    "intentId": 1000031
+  },
+  {
+    "question": "How do I know if the problem is in the Wikipedia software or my browser?",
+    "answer": "If you have another web browser installed, you can try to reproduce the problem in both. Failing this, you can describe your problem at Wikipedia:Village pump (technical) and ask other Wikipedians if they are having a similar problem.",
+    "category": "problems",
+    "actionId": 132,
+    "nextActionId": 131,
+    "stepId": 100032,
+    "intentId": 1000032
+  },
+  {
+    "question": "How do I make links?",
+    "answer": "Edit any page to see how wikilinks are made. (The edit-view is safe, and encouraged.) The most basic syntax you'll see in the wikitext is that the words of the link are surrounded by double square brackets: [[page name]].",
+    "category": "editing",
+    "actionId": 133,
+    "nextActionId": 132,
+    "stepId": 100033,
+    "intentId": 1000033
+  },
+  {
+    "question": "How do I recover a password I have forgotten?",
+    "answer": "If you entered your e-mail address when you signed up, you can have a new password generated. Click on the \"Log in\" link in the upper-right corner. Follow the link near the bottom of the page titled \"Forgot your password?\" On the Reset password page, which loads, enter either your username or your email address (the one you associated with the username), and select the Reset password button. You should receive an e-mail message with a new random password; you can use it to log in. You will then be presented with the opportunity to change your password to something you'll remember.",
+    "category": "technical",
+    "actionId": 134,
+    "nextActionId": 133,
+    "stepId": 100034,
+    "intentId": 1000034
+  },
+  {
+    "question": "How do I reference a category on a page without categorizing the page?",
+    "answer": "To link to the category page, put a colon before the word \"category\", inside the link, e.g. [[:Category:United States]], which will appear as Category:United States.",
+    "category": "categorization",
+    "actionId": 135,
+    "nextActionId": 134,
+    "stepId": 100035,
+    "intentId": 1000035
+  },
+  {
+    "question": "How do I rename a page?",
+    "answer": "Registered users with a little bit of editing history under their belts can move a page; this moves the page content and edit history to a new title, and creates a redirect page at the old title. This method is better than just copying and pasting the content by hand, as it preserves the article's history, as required by Wikipedia's license.",
+    "category": "editing",
+    "actionId": 136,
+    "nextActionId": 135,
+    "stepId": 100036,
+    "intentId": 1000036
+  },
+  {
+    "question": "How do I report that something isn't working properly?",
+    "answer": "If you think it's a bug in the software, you can send a bug report to the developers. See Wikipedia:Bug reports for directions.",
+    "category": "problems",
+    "actionId": 137,
+    "nextActionId": 136,
+    "stepId": 100037,
+    "intentId": 1000037
+  },
+  {
+    "question": "How do I request a block?",
+    "answer": "Disruptive behavior can be reported, and blocks requested at a specialized venue such as Wikipedia:Administrator intervention against vandalism or, if appropriate, Wikipedia:Administrators' noticeboard/Incidents. Users requesting blocks should supply credible evidence of the circumstances warranting a block.",
+    "category": "blocks",
+    "actionId": 138,
+    "nextActionId": 137,
+    "stepId": 100038,
+    "intentId": 1000038
+  },
+  {
+    "question": "How do I search Wikipedia?",
+    "answer": "There is a search box in the upper-right corner of the screen, with the word Search in it. Just type what you are looking for into the search box and press ↵ Enter.",
+    "category": "readers",
+    "actionId": 139,
+    "nextActionId": 138,
+    "stepId": 100039,
+    "intentId": 1000039
+  },
+  {
+    "question": "How do I suggest a new feature?",
+    "answer": "To make an official feature request, use Phabricator. For information on using Phabricator, please see Bug reports.",
+    "category": "technical",
+    "actionId": 140,
+    "nextActionId": 139,
+    "stepId": 100040,
+    "intentId": 1000040
+  },
+  {
+    "question": "How do policies get decided?",
+    "answer": "Wikipedia:Policies and guidelines describes how Wikipedia arrives at its policies and guidelines through a process of discussion and consensus. Discussion takes place in the various policy pages which form part of the \"Wikipedia:\" namespace. Sometimes policy is discussed off-wiki, but decisions always take place on-wiki.",
+    "category": "administrators",
+    "actionId": 141,
+    "nextActionId": 140,
+    "stepId": 100041,
+    "intentId": 1000041
+  },
+  {
+    "question": "How do you know if the information is correct?",
+    "answer": "Given that anyone can edit any article, it is, of course, possible for biased, out-of-date, or incorrect information to be posted. However, because there are so many other people reading the articles and monitoring contributions using the Recent Changes page, incorrect information is usually corrected quickly. Thus, the overall accuracy of the encyclopedia is improving all the time. You are encouraged to help by correcting articles, validating content, and providing useful references.",
+    "category": "overview",
+    "actionId": 142,
+    "nextActionId": 141,
+    "stepId": 100042,
+    "intentId": 1000042
+  },
+  {
+    "question": "How do you prevent people from ruining articles?",
+    "answer": "All changes to a page are registered in a \"page history\", so any defacement can be replaced by an older version of the page. And, in general, recent changes to Wikipedia are automatically listed on a special page for that purpose.",
+    "category": "overview",
+    "actionId": 143,
+    "nextActionId": 142,
+    "stepId": 100043,
+    "intentId": 1000043
+  },
+  {
+    "question": "How else can I navigate articles?",
+    "answer": "As well as the standard links within articles themselves, every page has a link.",
+    "category": "categorization",
+    "actionId": 144,
+    "nextActionId": 143,
+    "stepId": 100044,
+    "intentId": 1000044
+  },
+  {
+    "question": "How long should the ideal article be?",
+    "answer": "Since one can link from page to page to page, how long should the ideal Wikipedia article be? A good rule of thumb would be fewer than 5000 words, unless the subject really, really needs much exposition. However, for a subject that is that complex, one can link several shorter articles together, using a hub page to tie all articles together.",
+    "category": "editing",
+    "actionId": 145,
+    "nextActionId": 144,
+    "stepId": 100045,
+    "intentId": 1000045
+  },
+  {
+    "question": "I keep making a change in my article and somebody keeps changing it back. Why?",
+    "answer": "There are a variety of possibilities. Maybe someone thought your change was self-promoting or biased. Possibly the facts are disputed. Or it may be simply that someone thought your material wasn’t worthy of inclusion, or was written in a style not suitable to an encyclopedia.",
+    "category": "article-subject",
+    "actionId": 146,
+    "nextActionId": 145,
+    "stepId": 100046,
+    "intentId": 1000046
+  },
+  {
+    "question": "I need help improving an article. What help is available?",
+    "answer": "The first page that you should read is Article development, which outlines the steps that are typically involved. Also of interest is the Guide to writing better articles. It is also advantageous to study the best articles that Wikipedia has to offer; look through the lists of good and featured articles. By definition, featured articles (FAs) are among the very best in every respect; they are very accurately and thoroughly researched and referenced, very well structured and formatted, have well written prose, and are properly balanced.",
+    "category": "editor-assistance",
+    "actionId": 147,
+    "nextActionId": 146,
+    "stepId": 100047,
+    "intentId": 1000047
+  },
+  {
+    "question": "I've found vandalism, or I've damaged a page by mistake! How can I restore it?",
+    "answer": "There are several ways to revert edits. A reversion can be carried out manually by editing the page to delete wrongly added text or restore wrongly deleted text. You can do this by copying and pasting text from a past version.",
+    "category": "contributing",
+    "actionId": 148,
+    "nextActionId": 147,
+    "stepId": 100048,
+    "intentId": 1000048
+  },
+  {
+    "question": "If I have been blocked, how can I get unblocked?",
+    "answer": "The preferred way to appeal a block is to place {{unblock|reason=Your reason here ~~~~}} on your talk page, which is only blocked if abused. If you cannot edit your talk page, you can appeal via the Unblock Ticket Request System.",
+    "category": "blocks",
+    "actionId": 149,
+    "nextActionId": 148,
+    "stepId": 100049,
+    "intentId": 1000049
+  },
+  {
+    "question": "In what order should categories be listed within the article?",
+    "answer": "Both the alphabet and importance are used to order categories currently. Since some categories are obviously less relevant to the reader than others, categories should be ordered so that someone reading the article can use them to understand the subject, directing the reader to the categories that are most important to exploring the subject or understanding its context.",
+    "category": "categorization",
+    "actionId": 150,
+    "nextActionId": 149,
+    "stepId": 100050,
+    "intentId": 1000050
+  },
+  {
+    "question": "Is it possible for spammers to advertise on Wikipedia?",
+    "answer": "Unfortunately, spammers can and often do add spam to Wikipedia pages. Fortunately, anyone can quickly revert to a spam-free version of the page; it's so simple that most spam is eliminated within minutes.",
+    "category": "problems",
+    "actionId": 151,
+    "nextActionId": 150,
+    "stepId": 100051,
+    "intentId": 1000051
+  },
+  {
+    "question": "Is it possible to download the contents of Wikipedia?",
+    "answer": "Yes, the complete text and editing history of all Wikipedia pages can be downloaded. See Wikipedia:Database download.",
+    "category": "technical",
+    "actionId": 152,
+    "nextActionId": 151,
+    "stepId": 100052,
+    "intentId": 1000052
+  },
+  {
+    "question": "Is Wikipedia censored?",
+    "answer": "Wikipedia uses the minimum of censorship. Generally, only gratuitous explicit (pornographic) images are removed. The community of Wikipedia editors determine what text and images are displayed, so there may be material that offends some people. There may be those who are offended, shocked or disgusted by medical images, nudity, religious imagery and controversial images.",
+    "category": "readers",
+    "actionId": 153,
+    "nextActionId": 152,
+    "stepId": 100053,
+    "intentId": 1000053
+  },
+  {
+    "question": "My edits keep getting reverted. What should I do?",
+    "answer": "Reversions are frequently made to undo edits that fail to observe one or more of the following: Biographies of living persons, Neutral point of view, No original research, Reliable sources, Verifiability, What Wikipedia is not.",
+    "category": "editor-assistance",
+    "actionId": 154,
+    "nextActionId": 153,
+    "stepId": 100054,
+    "intentId": 1000054
+  },
+  {
+    "question": "One of the contributors is being unreasonable. Help!",
+    "answer": "See Wikipedia:Etiquette and Wikipedia:Dispute resolution.",
+    "category": "contributing",
+    "actionId": 155,
+    "nextActionId": 154,
+    "stepId": 100055,
+    "intentId": 1000055
+  },
+  {
+    "question": "Should I create an account? Can't I just edit articles anonymously?",
+    "answer": "Editors with user names enjoy several benefits. Among them is the positive reputation that goes with quality work. Wikipedians with an established history are respected especially with regard to neutralizing article disputes. In addition, Wikipedians sometimes find collaborating with unregistered users frustrating, because it is more difficult to contact them with questions, concerns, or suggestions.",
+    "category": "overview",
+    "actionId": 156,
+    "nextActionId": 155,
+    "stepId": 100056,
+    "intentId": 1000056
+  },
+  {
+    "question": "Should I translate pages across the various Wikipedias?",
+    "answer": "Yes, it's a good idea to cross-pollinate. Please give credit to the contributors of the original article by noting that you have done so, with a link to the original, in the edit summary or at the article's talk page. See Wikipedia:Translation for further information.",
+    "category": "contributing",
+    "actionId": 157,
+    "nextActionId": 156,
+    "stepId": 100057,
+    "intentId": 1000057
+  },
+  {
+    "question": "Somebody changed my categorization – what do I do?",
+    "answer": "All contributions to Wikipedia may be \"edited mercilessly\". If the change was not explained in the article history or talk page, try leaving a question on the relevant user's talk page. You may also change it back if you disagree.",
+    "category": "categorization",
+    "actionId": 158,
+    "nextActionId": 157,
+    "stepId": 100058,
+    "intentId": 1000058
+  },
+  {
+    "question": "Someone keeps writing negative things about me or my company. What can I do?",
+    "answer": "It depends whether the information is true, and fairly presented. If it's uncomplimentary but accurate, there may be very little you can do about it. If you feel the article is poorly-sourced, unduly negative, contains information that is irrelevant or otherwise not worth including, or is particularly hurtful to someone who’s not a public figure, please make those comments on the article’s talk page, or post to the Biographies of living persons Noticeboard to bring the article to the attention of the wider community. While Wikipedia is not censored, the editors do try to maintain balance in articles and abide by a neutral point of view. But information won't be taken down just because it makes you unhappy.",
+    "category": "article-subject",
+    "actionId": 159,
+    "nextActionId": 158,
+    "stepId": 100059,
+    "intentId": 1000059
+  },
+  {
+    "question": "What about the pale blue links?",
+    "answer": "Those are external links; i.e. those that link to pages outside Wikipedia.",
+    "category": "contributing",
+    "actionId": 160,
+    "nextActionId": 159,
+    "stepId": 100060,
+    "intentId": 1000060
+  },
+  {
+    "question": "What are categories?",
+    "answer": "Categories allow articles to be placed in one or more groups, and allow those groups to be further categorized. An article belonging to a category should contain a special link to a page that describes the category",
+    "category": "categorization",
+    "actionId": 161,
+    "nextActionId": 160,
+    "stepId": 100061,
+    "intentId": 1000061
+  },
+  {
+    "question": "What are templates?",
+    "answer": "Templates allow editors to implement functions. In their implementation, they are NOT limited to the Template: namespace. When you examine article source code, you can recognize them by double curly brackets. They can take parameters, both positional and named, and there are predefined keywords that are usually in capital letters.",
+    "category": "templates",
+    "actionId": 162,
+    "nextActionId": 161,
+    "stepId": 100062,
+    "intentId": 1000062
+  },
+  {
+    "question": "What categories already exist?",
+    "answer": "The best way to find out what exists is to browse. Either start at Wikipedia:Browse or start at Category:Articles, which shows the \"top\" level categories, to which all other categories should be connected. A list of all categories can be found at Special:Categories – there are many thousands listed but you can jump through them using the search box",
+    "category": "categorization",
+    "actionId": 163,
+    "nextActionId": 162,
+    "stepId": 100063,
+    "intentId": 1000063
+  },
+  {
+    "question": "What do I do if I find two articles on the same subjects?",
+    "answer": "You could merge them yourself if you are feeling bold. Pick the most suitable page name (which may not necessarily be one of the existing ones!). If you're not sure which name to use, or whether the two articles should really be merged, use the procedure at Help:Merging. You can also make a mention of the problem on the list of Wikipedia:Proposed mergers.",
+    "category": "contributing",
+    "actionId": 164,
+    "nextActionId": 163,
+    "stepId": 100064,
+    "intentId": 1000064
+  },
+  {
+    "question": "What does wiki mean?",
+    "answer": "The term \"wiki\" is derived from the word wikiwiki, which is the Hawaiian word for \"quick\". A wiki is a web site which allows people to contribute content; see our article on wikis for more information about this.",
+    "category": "schools",
+    "actionId": 165,
+    "nextActionId": 164,
+    "stepId": 100065,
+    "intentId": 1000065
+  },
+  {
+    "question": "What file format should I use for sound?",
+    "answer": "Multiple encodings are encouraged. WAV and Ogg Vorbis are allowed, but MP3 is not.",
+    "category": "contributing",
+    "actionId": 166,
+    "nextActionId": 165,
+    "stepId": 100066,
+    "intentId": 1000066
+  },
+  {
+    "question": "What file formats should I use for pictures or videos?",
+    "answer": "For images, use JPEG for photographs, and SVG for drawings and logos. PNG can also be used. Use GIF for inline animations. For video, Ogg Theora is currently the only recommended format.",
+    "category": "contributing",
+    "actionId": 167,
+    "nextActionId": 166,
+    "stepId": 100067,
+    "intentId": 1000067
+  },
+  {
+    "question": "What happens if my computer or browser crashes mid-edit, or if the server does not respond?",
+    "answer": "In case of a crash you'll lose your edit. To some extent, you can guard against this by editing in a text editor, for major work (but note that with regard to a system crash this does not help, unless you save frequently to disk).",
+    "category": "contributing",
+    "actionId": 168,
+    "nextActionId": 167,
+    "stepId": 100068,
+    "intentId": 1000068
+  },
+  {
+    "question": "What happens if two or more people are editing the same page",
+    "answer": "When the second person (and later people) attempts to save the page, MediaWiki will attempt to merge their changes into the current version of the text. If the merge fails then the user will receive an \"edit conflict\" message, and in some cases the opportunity to merge their changes manually. If multiple consecutive conflicts are noticed, it will generate a slightly different message.",
+    "category": "technical",
+    "actionId": 169,
+    "nextActionId": 168,
+    "stepId": 100069,
+    "intentId": 1000069
+  },
+  {
+    "question": "What happens when two users edit a page at the same time?",
+    "answer": "This is called an edit conflict, and only happens when two users try to edit the same part of a page. You'll get a conflict screen that displays both versions in separate windows, along with a summary highlighting the differences (typically showing the edits of both users, except those which both have made exactly the same), and instructions on how you should proceed. It's virtually impossible to lose any data.",
+    "category": "contributing",
+    "actionId": 170,
+    "nextActionId": 169,
+    "stepId": 100070,
+    "intentId": 1000070
+  },
+  {
+    "question": "What if two people edit the same article at the same time?",
+    "answer": "See Help:Edit conflict.",
+    "category": "overview",
+    "actionId": 171,
+    "nextActionId": 170,
+    "stepId": 100071,
+    "intentId": 1000071
+  },
+  {
+    "question": "What is a block?",
+    "answer": "A block is the method by which administrators technically prevent users from editing Wikipedia.",
+    "category": "blocks",
+    "actionId": 172,
+    "nextActionId": 171,
+    "stepId": 100072,
+    "intentId": 1000072
+  },
+  {
+    "question": "What is a stub?",
+    "answer": "A stub on Wikipedia is a very short article, usually of one paragraph or less. Many excellent articles started out as short stubs. Likewise, our hope is that existing stubs will be expanded into proper articles.",
+    "category": "contributing",
+    "actionId": 173,
+    "nextActionId": 172,
+    "stepId": 100073,
+    "intentId": 1000073
+  },
+  {
+    "question": "What is an administrator?",
+    "answer": "Two words for the same thing. An administrator is simply a Wikipedian who can access some of the few restricted Wikipedia software functions: deleting articles and uploaded files, protecting and unprotecting pages, and blocking and unblocking users or IP addresses.",
+    "category": "administrators",
+    "actionId": 174,
+    "nextActionId": 173,
+    "stepId": 100074,
+    "intentId": 1000074
+  },
+  {
+    "question": "What is an orphan?",
+    "answer": "An orphan is an article that no other article links to. Such articles can be found on Wikipedia, but it is preferable that another article should link to each article.",
+    "category": "contributing",
+    "actionId": 175,
+    "nextActionId": 174,
+    "stepId": 100075,
+    "intentId": 1000075
+  },
+  {
+    "question": "What is copyright?",
+    "answer": "Copyright is the right that the producer of a creative work has been granted to prevent others from copying it. Unlike a patent, however, in most places (i.e., countries) you don't have to apply for a copyright – you get one automatically every time you produce creative work.",
+    "category": "copyright",
+    "actionId": 176,
+    "nextActionId": 175,
+    "stepId": 100076,
+    "intentId": 1000076
+  },
+  {
+    "question": "What is the difference between a list and a category?",
+    "answer": "Grouping articles into a category is not the same as making a list of articles. To make a list of articles, you edit the list directly; but to place articles into a category, you edit each article and insert a category tag by placing [[Category:category_name]] in the body of the text. This automatically adds those articles as a list on the category's page. Despite the difference in how they are maintained, it is sometimes convenient to think of a category as a list of articles",
+    "category": "categorization",
+    "actionId": 177,
+    "nextActionId": 176,
+    "stepId": 100077,
+    "intentId": 1000077
+  },
+  {
+    "question": "What is the difference between a page and an article?",
+    "answer": "The term \"page\" encompasses all the material on Wikipedia, including encyclopedia topics, talk pages, documentation, and special pages such as Recent Changes. \"Article\" is a narrower term referring to a page containing an encyclopedia entry. Thus, all articles are pages, but not all pages are articles. See Wikipedia:What is an article for more.",
+    "category": "contributing",
+    "actionId": 178,
+    "nextActionId": 177,
+    "stepId": 100078,
+    "intentId": 1000078
+  },
+  {
+    "question": "What is the naming convention for categories?",
+    "answer": "Use the Wikipedia titling conventions of no unnecessary capital letters or abbreviations, i.e. use [[Category:Category examples]] instead of [[Category:Category E.g.]]. Avoid ambiguities.",
+    "category": "categorization",
+    "actionId": 179,
+    "nextActionId": 178,
+    "stepId": 100079,
+    "intentId": 1000079
+  },
+  {
+    "question": "What is Wikipedia?",
+    "answer": "Wikipedia is an encyclopedia which is free to use and edit. It is available in many different languages and on many devices. The content of Wikipedia is free to reproduce under the Creative Commons Attribution-Sharealike 3.0 Unported License (CC-BY-SA) and the GNU Free Documentation License (GFDL), except for some images.",
+    "category": "readers",
+    "actionId": 180,
+    "nextActionId": 179,
+    "stepId": 100080,
+    "intentId": 1000080
+  },
+  {
+    "question": "What prevents someone from contributing false or misleading information?",
+    "answer": "Wikipedia's content control mechanisms are reactive rather than preventive: anyone can go to almost any page and change the information to make it false or misleading. Although the majority of edits attempt to improve the encyclopedia, vandalism is frequent.",
+    "category": "schools",
+    "actionId": 181,
+    "nextActionId": 180,
+    "stepId": 100081,
+    "intentId": 1000081
+  },
+  {
+    "question": "What should I do if I find a copyright violation on Wikipedia?",
+    "answer": "We take this very seriously. We try hard to keep copyright violations out of Wikipedia, but we don't always succeed. If you are the copyright holder, go to Wikipedia:Request for immediate removal of copyright violation; otherwise, go to Wikipedia:Copyright problems and report the instance in question.",
+    "category": "copyright",
+    "actionId": 182,
+    "nextActionId": 181,
+    "stepId": 100082,
+    "intentId": 1000082
+  },
+  {
+    "question": "What should I do when I find a factual error in Wikipedia?",
+    "answer": "You should correct it. Wikipedia is written by volunteers who believe knowledge should be free for everyone, and the community is always ready to welcome new volunteers.",
+    "category": "readers",
+    "actionId": 183,
+    "nextActionId": 182,
+    "stepId": 100083,
+    "intentId": 1000083
+  },
+  {
+    "question": "What should I do when I see plagiarism?",
+    "answer": "If you see an article including inadequately attributed text or images – or, worse, copyright violations – please tell us about it in the \"talk\" page of that article. Then report it at Wikipedia:Copyright problems.",
+    "category": "problems",
+    "actionId": 184,
+    "nextActionId": 183,
+    "stepId": 100084,
+    "intentId": 1000084
+  },
+  {
+    "question": "Where can I find information on the markup used in editing?",
+    "answer": "See Wiki markup and Help:HTML in wikitext.",
+    "category": "editing",
+    "actionId": 185,
+    "nextActionId": 184,
+    "stepId": 100085,
+    "intentId": 1000085
+  },
+  {
+    "question": "Where can I get feedback?",
+    "answer": "For useful feedback or constructive criticism of your article, see Wikipedia:Requests for feedback.",
+    "category": "contributing",
+    "actionId": 186,
+    "nextActionId": 185,
+    "stepId": 100086,
+    "intentId": 1000086
+  },
+  {
+    "question": "Where should the category tag go in the article?",
+    "answer": "Category tags should be placed at the bottom of the article, after the appendices (e.g. References and External links) and before any inter-wiki language links and stub templates (see Wikipedia:Layout). This ensures that when newcomers press \"edit\", they are immediately presented with the main article text, rather than the more esoteric category tags. It also ensures that the category tags are in a consistent place so they are easy to find when an editor is updating the categorization of a bunch of articles.",
+    "category": "categorization",
+    "actionId": 187,
+    "nextActionId": 186,
+    "stepId": 100087,
+    "intentId": 1000087
+  },
+  {
+    "question": "Which wiki software does Wikipedia run on?",
+    "answer": "Wikipedia and the other Wikimedia projects use the MediaWiki software to facilitate collaborative editing and storage of page histories.",
+    "category": "overview",
+    "actionId": 188,
+    "nextActionId": 187,
+    "stepId": 100088,
+    "intentId": 1000088
+  },
+  {
+    "question": "Who is responsible for the articles on Wikipedia?",
+    "answer": "You can learn who is responsible for the most recent versions of any given page by clicking on the \"View history\" link.",
+    "category": "overview",
+    "actionId": 189,
+    "nextActionId": 188,
+    "stepId": 100089,
+    "intentId": 1000089
+  },
+  {
+    "question": "Who monitors the conduct of an administrator?",
+    "answer": "Administrators monitor each other; nearly all admin actions are completely reversible by any other admin (including page deletions, lockings, and IP bannings). The Arbitration Committee also has the power to discipline administrators, and has done so in several cases. In a truly rare case the Wikimedia Board of Trustees could step in.",
+    "category": "administrators",
+    "actionId": 190,
+    "nextActionId": 189,
+    "stepId": 100090,
+    "intentId": 1000090
+  },
+  {
+    "question": "Who writes the articles on Wikipedia?",
+    "answer": "Wikipedia is written and edited by volunteers from around the world. If you wish to help, you can start by visiting our introduction for contributors.",
+    "category": "main",
+    "actionId": 191,
+    "nextActionId": 190,
+    "stepId": 100091,
+    "intentId": 1000091
+  },
+  {
+    "question": "Why am I having trouble logging in?",
+    "answer": "See Help:Logging in for details.",
+    "category": "main",
+    "actionId": 192,
+    "nextActionId": 191,
+    "stepId": 100092,
+    "intentId": 1000092
+  },
+  {
+    "question": "Why are some links red?",
+    "answer": "This indicates that a page with that name has not yet been started.",
+    "category": "contributing",
+    "actionId": 193,
+    "nextActionId": 192,
+    "stepId": 100093,
+    "intentId": 1000093
+  },
+  {
+    "question": "Why have I been blocked?",
+    "answer": "There may be several reasons for this — if you feel you've been blocked wrongly, then put the text {{unblock|reason}} tag on your talk page, putting the reason you think you have been wrongly blocked in for reason. An administrator will come and take a look. It may be due to an automatic block by the software. Please be sure to include your IP address, which you can find in the block message.",
+    "category": "editing",
+    "actionId": 194,
+    "nextActionId": 193,
+    "stepId": 100094,
+    "intentId": 1000094
+  },
+  {
+    "question": "Why was my article deleted?",
+    "answer": "If you look at the address where your page was, it should have a red box above it that shows the user who deleted it (in the form \"Username (talk|contribs)\") and their reason (which appears in italics). If the reason is not helpful, or you disagree with it, you can click on the \"talk\" link to send them a message and a",
+    "category": "main",
+    "actionId": 195,
+    "nextActionId": 194,
+    "stepId": 100095,
+    "intentId": 1000095
+  }
+]
